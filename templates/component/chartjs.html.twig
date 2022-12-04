@@ -1,0 +1,17 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}
+	{{parent()}}| ChartJs
+{% endblock %}
+
+{% block body %}
+	<div class="container">
+		<h1 class="text-center p-4">ChartJs</h1>
+
+		Exemple de ChartJs avec Symfony :
+
+		{{ render_chart(chart) }}
+
+	</div>
+	<a href="{{path('app_home')}}" class="btn btn-lg btn-dark mx-3">Retour à l'accueil</a>
+{% endblock %}
