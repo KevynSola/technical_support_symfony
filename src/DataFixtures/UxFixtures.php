@@ -9,7 +9,7 @@ use Doctrine\Persistence\ObjectManager;
 class UxFixtures extends Fixture
 {
     public const CATEGORY_UX = [
-        'Autocomplete',
+        'Auto-complete',
         'ChartJs',
         'CropperJs',
         'Dropzone',
@@ -28,7 +28,6 @@ class UxFixtures extends Fixture
         foreach (self::CATEGORY_UX as $uxName) {
             $componentUx = new ComponentUx();
             $componentUx->setName($uxName);
-            $this->addReference('component_' . $uxName, $componentUx);
             $manager->persist($componentUx);
         };
 

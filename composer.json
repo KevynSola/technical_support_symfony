@@ -7,6 +7,7 @@
         "php": ">=8.1",
         "ext-ctype": "*",
         "ext-iconv": "*",
+        "amphp/http-client": "^4.2.1",
         "doctrine/annotations": "^1.0",
         "doctrine/doctrine-bundle": "^2.7",
         "doctrine/doctrine-migrations-bundle": "^3.2",
@@ -38,6 +39,7 @@
         "symfony/string": "6.2.*",
         "symfony/translation": "6.2.*",
         "symfony/twig-bundle": "6.2.*",
+        "symfony/ux-autocomplete": "^2.6",
         "symfony/ux-chartjs": "^2.6",
         "symfony/validator": "6.2.*",
         "symfony/web-link": "6.2.*",
@@ -95,6 +97,7 @@
     },
     "require-dev": {
         "doctrine/doctrine-fixtures-bundle": "^3.4",
+        "fakerphp/faker": "^1.20",
         "phpunit/phpunit": "^9.5",
         "symfony/browser-kit": "6.2.*",
         "symfony/css-selector": "6.2.*",

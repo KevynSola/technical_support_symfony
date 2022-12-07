@@ -13,7 +13,7 @@
 			<div class="row">
 				{% for component in components %}
 					<div class="col col-sm-4 col-md-3 my-4">
-						<a class="btn btn-lg btn-outline-danger w-100" href="{{path('app_chartjs')}}">{{component.name}}</a>
+						<a class="btn btn-lg btn-outline-danger w-100" href="/{{component.name|lower}}">{{component.name}}</a>
 					</div>
 				{% endfor %}
 			</div>

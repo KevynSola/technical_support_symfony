@@ -1,0 +1,19 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Edit Autocomplete
+{% endblock %}
+
+{% block body %}
+	<section>
+		<div class="container">
+			<div class="bloc-head d-flex justify-content-between align-items-center">
+				<h1>Edition Autocompletion</h1>
+				<a class="btn btn-lg btn-primary m-3" href="{{ path('app_multiple_index') }}">Retour à l'index</a>
+			</div>
+			{{ include('multiple/_form.html.twig', {'button_label': 'Éditer'}) }}
+
+			{{ include('multiple/_delete_form.html.twig') }}
+
+		</div>
+	</section>
+{% endblock %}

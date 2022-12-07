@@ -1,0 +1,18 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Nouvelle Ajout
+{% endblock %}
+
+{% block body %}
+	<section>
+		<div class="container">
+			<div class="bloc-head d-flex justify-content-between align-items-center">
+				<h1>Nouvelle Ajout</h1>
+				<a class="btn btn-lg btn-primary" href="{{ path('app_multiple_index') }}">Retour</a>
+			</div>
+
+			{{ include('multiple/_form.html.twig') }}
+
+		</div>
+	</section>
+{% endblock %}

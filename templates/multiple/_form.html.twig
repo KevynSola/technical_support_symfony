@@ -1,0 +1,12 @@
+{{ form_start(form) }}
+<div class="form-errors">
+	{{ form_errors(form) }}
+</div>
+<div class="form-control-lg">
+	{{ form_widget(form) }}
+</div>
+<div class="form-help">
+{{ form_help(form) }}
+</div>
+<button class="btn btn-lg btn-success m-3">{{ button_label|default('Ajouter') }}</button>
+{{ form_end(form) }}
