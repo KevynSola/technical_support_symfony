@@ -7,13 +7,15 @@
 {% block body %}
 	<div class="container">
 		<h1 class="text-center p-4">ChartJs</h1>
+		<div class="bloc-head d-flex justify-content-between align-items-center">
+			<p>Exemple de ChartJs avec Symfony :</p>
+			<div class="btn-home m-4">
+				<a href="{{path('app_home')}}" class="btn btn-lg btn-dark">Retour à l'accueil</a>
+			</div>
+		</div>
+		<div class="card text-dark p-3">
+			{{ render_chart(chart) }}
+		</div>
 
-		Exemple de ChartJs avec Symfony :
-
-		{{ render_chart(chart) }}
-
-	</div>
-	<div class="btn-home d-flex justify-content-center m-4">
-		<a href="{{path('app_home')}}" class="btn btn-lg btn-dark">Retour à l'accueil</a>
 	</div>
 {% endblock %}

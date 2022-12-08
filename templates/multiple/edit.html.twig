@@ -10,10 +10,11 @@
 				<h1>Edition Autocompletion</h1>
 				<a class="btn btn-lg btn-primary" href="{{ path('app_multiple_index') }}">Retour à l'index</a>
 			</div>
-			{{ include('multiple/_form.html.twig', {'button_label': 'Éditer'}) }}
+			<div class="card text-dark p-3">
+				{{ include('multiple/_form.html.twig', {'button_label': 'Éditer'}) }}
 
-			{{ include('multiple/_delete_form.html.twig') }}
-
+				{{ include('multiple/_delete_form.html.twig') }}
+			</div>
 		</div>
 	</section>
 {% endblock %}

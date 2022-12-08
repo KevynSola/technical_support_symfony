@@ -13,32 +13,33 @@
 					<a class="btn btn-lg btn-dark" href="/">Retour à l'accueil</a>
 				</div>
 			</div>
-
-			<table class="table">
-				<thead>
-					<tr>
-						<th>Id</th>
-						<th>Nom</th>
-						<th>actions</th>
-					</tr>
-				</thead>
-				<tbody>
-					{% for multiple in multiples %}
+			<div class="card">
+				<table class="table m-4">
+					<thead>
 						<tr>
-							<td>{{ multiple.id }}</td>
-							<td>{{ multiple.nom }}</td>
-							<td>
-								<a class="btn btn-outline-success" href="{{ path('app_multiple_show', {'id': multiple.id}) }}">Voir</a>
-								<a class="btn btn-warning" href="{{ path('app_multiple_edit', {'id': multiple.id}) }}">Éditer</a>
-							</td>
+							<th>Id</th>
+							<th>Nom</th>
+							<th>actions</th>
 						</tr>
-					{% else %}
-						<tr>
-							<td colspan="3">no records found</td>
-						</tr>
-					{% endfor %}
-				</tbody>
-			</table>
+					</thead>
+					<tbody>
+						{% for multiple in multiples %}
+							<tr>
+								<td>{{ multiple.id }}</td>
+								<td>{{ multiple.nom }}</td>
+								<td>
+									<a class="btn btn-sm btn-outline-success" href="{{ path('app_multiple_show', {'id': multiple.id}) }}">Voir</a>
+									<a class="btn btn-sm btn-warning" href="{{ path('app_multiple_edit', {'id': multiple.id}) }}">Éditer</a>
+								</td>
+							</tr>
+						{% else %}
+							<tr>
+								<td colspan="3">no records found</td>
+							</tr>
+						{% endfor %}
+					</tbody>
+				</table>
+			</div>
 
 		</div>
 	</section>

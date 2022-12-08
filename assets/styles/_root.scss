@@ -1,1 +1,47 @@
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Cabin:ital,wght@0,400;0,700;1,400&display=swap");
+
+$dark: #000000;
+$menthol: #00f0ff;
+$gray: #bdbdbd;
+$light: #ebeaea;
+
+$title-font-family: "Bebas Neue", cursive;
+$body-font-family: "Cabin", sans-serif;
+
 @import "~bootstrap/scss/bootstrap";
+
+body {
+  font-family: $body-font-family;
+  background-color: #eb0800;
+  background-image: url("https://www.transparenttextures.com/patterns/food.png");
+  color: $light;
+}
+
+h1,
+h2,
+h3 {
+  font-family: $title-font-family;
+}
+
+h1 {
+  font-size: 4rem;
+  text-shadow: 1px 1px 4px $dark;
+}
+
+p,
+a {
+  font-size: 2.5rem;
+}
+
+p {
+  text-shadow: 1px 1px 2px $dark;
+}
+
+.ruban {
+  height: 300px;
+  width: 100%;
+  position: absolute;
+  top: 30%;
+  background-color: rgb(0, 66, 44);
+  background-image: url("https://www.transparenttextures.com/patterns/white-diamond-dark.png");
+}
